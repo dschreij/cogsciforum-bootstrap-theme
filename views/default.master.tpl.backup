@@ -47,35 +47,28 @@
 
     <section class="container">
       <div class="row">
-        <div id="cogsci-forum-header" class="col-md-12">
-          <div class="well">
-            <a href="http://www.cogsci.nl/" target="blank">
-              <img src="themes/cogsci/images/header1.png">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <aside class="page-sidebar" role="complementary">
-          <div class="well">
-            {asset name="Panel"}
-          </div>
-        </aside>
-
         <main class="page-content" role="main">
+          {breadcrumbs}
           {if InSection(array("CategoryList", "CategoryDiscussionList", "DiscussionList"))}
             <div class="well search-form">{searchbox}</div>
           {/if}
           {asset name="Content"}
         </main>
+
+        <aside class="page-sidebar" role="complementary">
+          {asset name="Panel"}
+        </aside>
       </div>
     </section>
 
     <footer class="page-footer sticky-footer">
       <div class="container">
         <div class="clearfix">
-          <p class="pull-right">{t c="Copyright"} &copy; {$smarty.now|date_format:"%Y"} <a href="http://www.cogsci.nl/smathot">Sebastiaan Mathôt</a> // Photos originally from <a href="http://www.lucnix.be/main.php">Lucnix</a> and <a href="http://commons.wikimedia.org/wiki/File:Octopus_vulgaris2.jpg">WikiMedia</a> // Powerered by <a href="http://www.vanillaforums.org/">Vanilla</a>
+          <p class="pull-left">{t c="Copyright"} &copy; {$smarty.now|date_format:"%Y"} <a href="{link path="home"}">{logo}</a></p>
+          <p class="pull-right hidden-xs">{t c="Built with"} <i class="InformSprite Heart"></i> {t c="and"} <a href="http://getbootstrap.com">Bootstrap</a>. {t c="Powered by"} <a href="{vanillaurl}">Vanilla Forums</a>
+            <!-- A lot of time was put into this project - a "Follow" and a "Star" would be most appreciated! -->
+            <iframe src="https://ghbtns.com/github-btn.html?user=kasperisager&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20" style="vertical-align:top;margin-left:20px;"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=kasperisager&repo=vanilla-bootstrap&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20" style="vertical-align:top;"></iframe>
           </p>
         </div>
         {asset name="Foot"}

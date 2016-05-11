@@ -1,0 +1,308 @@
+body {
+	background-color: @cogsci-color-body;
+}
+
+.cogsci-banner {
+	background: url("http://cogsci.nl/share/images/revisited/random.php") top left no-repeat;
+	height: 100px;
+	margin-bottom: 16px;
+}
+
+.cogsci-arrow-left,
+.cogsci-arrow-right {
+	color: @cogsci-color-link-hover;
+	font-size: 1.2em;
+	padding: 8px;
+}
+
+.cogsci-footer {
+	background-color: @cogsci-color-box;
+	border-top: solid 1px @cogsci-color-border;
+	color: @cogsci-color-secondary;
+	padding: 8px 16px 8px 16px;
+	font-family: @cogsci-font-condensed;
+}
+
+.cogsci-container {
+	box-shadow: 0px 0px 20px grey;
+	max-width: 900px;
+	background-color: #ffffff;
+}
+
+// Content -- where the articles go
+
+.cogsci-content {
+	// width: 100%;
+	max-width: 640px;
+	padding: 0px;
+	margin: 16px;
+}
+
+.cogsci-content #system-readmore {
+	display:none!important;
+}
+
+.cogsci-content p {
+	text-align: justify;
+}
+
+.cogsci-content pre,
+.cogsci-content code,
+.cogsci-content a {
+	word-wrap: break-word;
+}
+
+.cogsci-content img {
+	max-width: 640px;
+	.img-responsive;
+}
+
+.cogsci-content .footnote {
+	font-size: @font-size-small;
+}
+
+.cogsci-content .pager {
+	padding-top: 8px;
+	font-family: @cogsci-font-condensed;
+	border-top: solid 1px @cogsci-color-border;
+	padding-top: 32px;
+	text-align: left;
+}
+
+.cogsci-content h1,
+.cogsci-content h2,
+.cogsci-content h3 {
+	padding-left: 8px;
+	margin-left: -9px;
+	border-left: solid 1px @cogsci-color-border;
+}
+
+.cogsci-content .pager li a {
+	border-radius: @cogsci-border-radius!important;
+}
+
+.cogsci-content .cogsci-bibliography p {
+	text-indent: -16px;
+	margin-left: 16px;
+	text-align: left;
+}
+
+.cogsci-content small {
+	font-size: @font-size-small!important;
+	color: @cogsci-color-secondary!important;
+}
+
+.cogsci-content .embed-responsive {
+	margin: 8px 0px 12px 0px;
+}
+
+.cogsci-content .img-right {
+	float: right;
+	margin: 16px 0px 16px 16px;
+}
+
+.cogsci-content .img-left {
+	float: right;
+	margin: 16px 0px 16px 16px;
+}
+
+.cogsci-content blockquote {
+	font-family: @cogsci-font-serif;
+	font-size: 1.2em;
+}
+
+// Sidebar layout
+
+.cogsci-social {
+	height: 48px;
+	margin-right: -4px;
+	margin-bottom: 24px;
+}
+
+.cogsci-social .cogsci-twitter,
+.cogsci-social .cogsci-facebook {
+	margin-right: 20px;
+}
+
+.cogsci-share {
+	background-color: @cogsci-color-box;
+	border: solid 1px @cogsci-color-border;
+	border-radius: 4px;
+	padding: 8px 0px 4px 8px;
+	margin-bottom: 16px;
+	height: 38px;
+}
+
+.cogsci-sidebar {
+	width: 192px;
+	margin: 16px;
+	padding: 0px;
+}
+
+.cogsci-sidebar-header {
+	color: @cogsci-color-secondary;
+	font-size: 0.8em;
+	text-align: center;
+	display: block;
+	margin: 16px 0px 16px 0px;
+	font-family: @cogsci-font-condensed;
+}
+
+.cogsci-sidebar ul {
+	padding-left: 0px;
+}
+
+.cogsci-side-menu li {
+	list-style-type: none;
+	margin: 0px;
+	border-bottom: solid 1px @cogsci-color-border;
+	padding: 8px 0px 8px 0px;
+}
+
+.cogsci-side-menu .active a {
+	font-weight: bold;
+}
+
+// Title bar layout
+
+.cogsci-page-title {
+	display: block;
+	font-size: 1.5em;
+	background-color: @cogsci-color-box;
+	border-top: solid 1px @cogsci-color-border;
+	border-bottom: solid 1px @cogsci-color-border;
+	border-radius: 1px;
+	margin-bottom: 8px;
+}
+
+.cogsci-page-title-left {
+	max-width: 192px;
+	margin: 16px;
+	height: 48px;
+	padding: 0px 0px 0px 64px;
+	background: url('../img/cogsci.png') top left no-repeat;
+	color: @cogsci-color-brand;
+	font-size: 0.7em;
+	font-family: @cogsci-font-condensed;
+}
+
+.cogsci-page-title-right {
+	color: @cogsci-color-header;
+	margin: 16px 16px 16px 0px;
+	line-height: 125%;
+	font-family: @cogsci-font-serif;
+}
+
+.cogsci-page-title-right .cogsci-une {
+	color: @cogsci-color-secondary;
+}
+
+// Article layout
+
+.cogsci-article-summary {
+	margin-bottom: 32px;
+}
+
+h2.cogsci-article-title-1 {
+	border-top: none!important;
+	padding: 0px!important;
+}
+
+.cogsci-article-title {
+	margin-top: 0px;
+	display: block;
+	font-size: 1.5em;
+	border-top: solid 1px @cogsci-color-border;
+	border-left: none!important;
+	margin-left: 0px!important;
+	margin-bottom: 16px!important;
+	border-radius: 1px;
+	padding: 16px 0px 0px 0px!important;
+}
+
+.cogsci-article-metadata {
+	float: right;
+	color: @cogsci-color-secondary;
+	text-align: right;
+	font-size: 0.8em;
+	margin-left: 16px;
+	margin-bottom: 16px;
+	margin-right: -20px;
+	padding: 4px 20px 4px 16px;
+	border-left: solid 1px @cogsci-color-border;
+	font-family: @cogsci-font-condensed;
+}
+
+.cogsci-article-metadata address {
+	margin: 0px;
+}
+
+.cogsci-article-readmore {
+	color: @cogsci-color-link;
+	font-family: @cogsci-font-condensed;
+	margin-top: 16px;
+}
+
+// Top menu
+
+.cogsci-top-menu .navbar-collapse,
+.cogsci-top-menu .navbar {
+	border: none!important;
+}
+
+.cogsci-top-menu .navbar {
+	background-color: @cogsci-color-box!important;
+	border-bottom: solid 1px @cogsci-color-border!important;
+}
+
+.cogsci-top-menu li {
+
+}
+
+.cogsci-top-menu li a {
+	color: @cogsci-color-secondary!important;
+}
+
+.cogsci-top-menu li.active a {
+	background-color: @cogsci-color-box!important;
+	font-weight: bold;
+}
+
+.cogsci-top-menu .navbar-brand {
+	padding: 8px;
+}
+
+.cogsci-top-menu .navbar-brand img {
+	height: 32px;
+}
+
+// Floating title and social buttons
+
+.affix {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	border-radius: 0px;
+	height: auto;
+	margin: 0px;
+	box-shadow: 0px 0px 20px grey;
+}
+
+.cogsci-floating-title,
+.affix-top .cogsci-floating-title {
+	display: none;
+}
+
+.affix .cogsci-floating-title {
+	display: block;
+	font-family: @cogsci-font-serif;
+	color: @cogsci-color-header;
+	padding-bottom: 8px;
+}
+
+// Iframes
+
+.cogsci-spreadsheet-iframe,
+.cogsci-gabor-iframe {
+	padding-bottom: 300%;
+}

@@ -14,22 +14,10 @@ $ThemeInfo['bootstrap'] = array(
   'Options' => array(
     'Styles' => array(
       'Default'   => '%s_default',
-      'Bootstrap' => '%s_bootstrap',
       'Cerulean'  => '%s_cerulean',
-      'Cosmo'     => '%s_cosmo',
-      'Cyborg'    => '%s_cyborg',
+      'Cogsci'    => '%s_cogsci',
       'Darkly'    => '%s_darkly',
       'Flatly'    => '%s_flatly',
-      'Journal'   => '%s_journal',
-      'Lumen'     => '%s_lumen',
-      'Paper'     => '%s_paper',
-      'Readable'  => '%s_readable',
-      'Sandstone' => '%s_sandstone',
-      'Simplex'   => '%s_simplex',
-      'Slate'     => '%s_slate',
-      'Spacelab'  => '%s_spacelab',
-      'Superhero' => '%s_superhero',
-      'United'    => '%s_united',
       'Yeti'      => '%s_yeti'
     )
   )
